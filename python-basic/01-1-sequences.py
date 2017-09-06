@@ -8,7 +8,7 @@ print(months)
 # iterate through them:
 # 하나씩 출력하기
 for item in months:
-    print item
+    print (item)
 
 
 t = ('john', 32, (2,3,4,5), 'hello')

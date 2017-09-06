@@ -12,8 +12,8 @@ v = []
 for i in range(0,3):
     v.append(i)
 
-print v
+print (v)
 
 # 하나씩 출력하기
 for item in v:
-    print item
+    print (item)
