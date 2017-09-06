@@ -1,0 +1,16 @@
+# pycharm
+.idea/
+.ipynb_checkpoints
+
+# OS-dependent
+Thumbs.db
+.DS_Store
+._.DS_Store
+._*
+__MACOSX
+
+# Python-related
+*.pyc
+
+
+
