@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 717005
 # creating a tuple
 months = ('January','February','March','April','May','June',\
