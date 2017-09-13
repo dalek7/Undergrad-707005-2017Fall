@@ -33,7 +33,7 @@ plt.plot(x, y4)
 
 # 새 figure 추가
 plt.figure(3)
-plt.plot(x, y4,'o-')
+plt.plot(x, y4,'ro-')
 plt.show()
 
 

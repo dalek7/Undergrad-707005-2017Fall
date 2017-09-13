@@ -1,18 +1,25 @@
 
 ## Windows 사용자
-
 ### Anaconda 설치
 다음 파일을 다운로드.
 ```
 https://repo.continuum.io/archive/Anaconda3-4.4.0-Windows-x86_64.exe
 ```
+or 느린 경우
+```
+https://d.pr/WLcUs8
+```
+* 필요에 따라 환경변수에 path 등록
 
 ### pycharm 설치
 * 다음 파일을 다운로드.
 ```
 https://download.jetbrains.com/python/pycharm-community-2017.1.4.exe
 ```
-
+or 느린 경우
+```
+https://d.pr/FhSUkq
+```
 
 ### tensorflow 설치 (virtualenv)
 ```
@@ -29,10 +36,7 @@ Python 2.7.10 (default, Feb  7 2017, 00:08:15)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tensorflow as tf
 
-
 ## Mac 사용자
-
-
 ### Anaconda 설치
 * Python 3.6 version
 ```
