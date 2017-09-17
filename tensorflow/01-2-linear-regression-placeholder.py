@@ -1,4 +1,6 @@
-# Lab 2 Linear Regression
+# -*- coding: utf-8 -*-
+# 717005
+# Linear Regression
 import tensorflow as tf
 tf.set_random_seed(777)  # for reproducibility
 
