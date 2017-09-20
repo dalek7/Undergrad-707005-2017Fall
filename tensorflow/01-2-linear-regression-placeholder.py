@@ -40,22 +40,14 @@ for step in range(2001):
         print(step, cost_val, W_val[0], b_val[0])
 
 # Learns best fit W:[ 1.],  b:[ 0]
-'''
-...
-1980 1.32962e-05 [ 1.00423515] [-0.00962736]
-2000 1.20761e-05 [ 1.00403607] [-0.00917497]
-'''
+# 학습완료.
+print(W_val[0], b_val[0]);
 
 # Testing our model
 print(sess.run(hypothesis, feed_dict={X: [5]}))
 print(sess.run(hypothesis, feed_dict={X: [2.5]}))
 print(sess.run(hypothesis, feed_dict={X: [1.5, 3.5]}))
 
-'''
-[ 5.0110054]
-[ 2.50091505]
-[ 1.49687922  3.50495124]
-'''
 print
 print("# Fit the line with new training data")
 # Fit the line with new training data

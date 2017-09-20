@@ -40,27 +40,38 @@ vcost =[] # 비어있는 array (list)
 # Fit the line
 x1 =np.linspace(np.min(x_train)-1, np.max(x_train)+1, num=5)
 
-m1 = 0
-b1 = 0
+
 for step in range(2001):
     sess.run(train)
     vcost.append(sess.run(cost))
 
     if step % 20 == 0:
-        m1 = sess.run(W)[0]
-        b1 = sess.run(b)[0]
-        print(step, sess.run(cost), m1, b1)
+        w1 = sess.run(W)[0] # 기울기
+        b1 = sess.run(b)[0] # bias
+        print(step, sess.run(cost), w1, b1)
+
+
+# 학습완료.
+# Learns best fit W:[ 2.],  b:[ 0.]
+
+w1 = sess.run(W)[0] # 기울기
+b1 = sess.run(b)[0] # bias
+str1 = 'y = ' + str(w1) +'x + ' + str(b1)
+print(w1, b1)
+print(str1)
+
 
 plt.figure(1)
 plt.plot(x_train, y_train,'o')
-plt.plot(x1,m1*x1 + b1); plt.grid()
-plt.grid()
-plt.axis((np.min(x_train) - 1, np.max(x_train) + 1, np.min(y_train) - 1, np.max(y_train) + 1))
+plt.plot(x1,w1*x1 + b1)
+plt.grid() # 격자
+#plt.axis((np.min(x_train) - 1, np.max(x_train) + 1, np.min(y_train) - 1, np.max(y_train) + 1))
+plt.title(str1)
+
 
 plt.figure(2)
 plt.plot(vcost)
+str2= "Cost = %.6f" % vcost[-1]
+plt.title(str2)
 plt.grid()
 plt.show()
-
-# Learns best fit W:[ 2.],  b:[ 0.]
-
