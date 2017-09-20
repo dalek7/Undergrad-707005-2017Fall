@@ -8,16 +8,21 @@ import matplotlib.pyplot as plt
 # X and Y data
 x_train = [1, 2, 3]
 #y_train = [2, 4, 6] # 그냥 x_train 에 2배 곱해서 생성
-y_train = [3, 5, 7]
+#y_train = [3, 5, 7]
 
-#y_train = [2+0.1, 4-0.3, 6+0.15]
+y_train = [2+0.1, 4-0.3, 6+0.15]
 
 # Try to find values for W and b to compute y_data = x_data * W + b
 # We know that W should be 2 and b should be 0
 # But let TensorFlow figure it out
 
-W = tf.Variable(tf.random_normal([1]), name='weight')
-b = tf.Variable(tf.random_normal([1]), name='bias')
+#W = tf.Variable(tf.random_normal([1]), name='weight')
+#b = tf.Variable(tf.random_normal([1]), name='bias')
+w0 = 1;
+b0 = 0;
+
+W = tf.Variable(w0 * tf.ones([1]), name='weight')
+b = tf.Variable(b0 * tf.ones([1]), name='weight')
 
 # Our hypothesis XW+b
 hypothesis = x_train * W + b
