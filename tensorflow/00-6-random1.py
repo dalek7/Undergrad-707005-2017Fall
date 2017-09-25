@@ -16,6 +16,8 @@ sess = tf.Session()
 gaussian_numbers2tf = sess.run(gaussian_numbers2)
 sess.close()
 
+
+# 아래는 그림그리는 부분
 # Figures - Numpy
 plt.figure(1)
 num_bins = 50
