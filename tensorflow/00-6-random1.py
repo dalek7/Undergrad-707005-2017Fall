@@ -1,3 +1,5 @@
+# coding: utf-8
+# 717005
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
