@@ -9,6 +9,7 @@ b = tf.placeholder(tf.int16)
 # Define some operations
 add = a+b #tf.add(a, b)
 mul = a*b #tf.mul(a, b)
+
 # Launch the default graph.
 with tf.Session() as sess:
     # Run every operation with variable input

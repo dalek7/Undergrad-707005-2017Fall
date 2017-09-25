@@ -2,7 +2,7 @@
 # 717005
 # Linear Regression
 import tensorflow as tf
-tf.set_random_seed(777)  # for reproducibility
+tf.set_random_seed(777)
 
 # Try to find values for W and b to compute y_data = W * x_data + b
 # We know that W should be 1 and b should be 0
@@ -42,22 +42,6 @@ for step in range(2001):
 # Learns best fit W:[ 1.],  b:[ 0]
 # 학습완료.
 print(W_val[0], b_val[0]);
-
-# Testing our model
-print(sess.run(hypothesis, feed_dict={X: [5]}))
-print(sess.run(hypothesis, feed_dict={X: [2.5]}))
-print(sess.run(hypothesis, feed_dict={X: [1.5, 3.5]}))
-
-print
-print("# Fit the line with new training data")
-# Fit the line with new training data
-for step in range(2001):
-    cost_val, W_val, b_val, _ = \
-        sess.run([cost, W, b, train],
-                 feed_dict={X: [1, 2, 3, 4, 5],
-                            Y: [2.1, 3.1, 4.1, 5.1, 6.1]})
-    if step % 20 == 0:
-        print(step, cost_val, W_val[0], b_val[0])
 
 # Testing our model
 print(sess.run(hypothesis, feed_dict={X: [5]}))
