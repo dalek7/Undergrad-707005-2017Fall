@@ -52,7 +52,7 @@ with tf.Session() as sess:
     y_calc, c, a= sess.run([y_forward, predicted, accuracy],
                         feed_dict={X: x_data, Y: y_data, W1:W1_data, b1:b1_data, W2:W2_data, b2:b2_data})
 
-    print("Hypothesis: ", y_calc)
+    print("Calc: ", y_calc)
     print("Correct: ", c)
     print("Accuracy: ", a*100.0)
 
