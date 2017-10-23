@@ -12,7 +12,10 @@ def NAND(x1, x2):
     else:
         return 1
 
-if __name__ == '__main__':
-    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
-        y = NAND(xs[0], xs[1])
-        print(str(xs) + " -> " + str(y))
+
+# 다음의 조합을 넣어 동작 확인
+xs = [(0, 0), (1, 0), (0, 1), (1, 1)]
+
+x = (0,0)
+y = NAND(x[0], x[1])
+print(str(x) , '-->', y)
