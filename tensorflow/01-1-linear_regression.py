@@ -16,6 +16,8 @@ y_train = [2+0.1, 4-0.3, 6+0.15] # 약간의 noise 추가
 # We know that W should be 2 and b should be 0
 # But let TensorFlow figure it out
 
+# 임의의 초기값 설정.
+# tensorflow가 알아낼 변수들임
 #W = tf.Variable(tf.random_normal([1]), name='weight')
 #b = tf.Variable(tf.random_normal([1]), name='bias')
 w0 = 7.0;
