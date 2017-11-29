@@ -2,7 +2,6 @@
 # based on https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-09-2-xor-nn.py
 import tensorflow as tf
 import numpy as np
-import matplotlib.pyplot as plt
 
 tf.set_random_seed(777)  # for reproducibility
 learning_rate = 0.1
