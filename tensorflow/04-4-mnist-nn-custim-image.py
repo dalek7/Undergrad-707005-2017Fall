@@ -1,4 +1,4 @@
-# MNIST and NN
+# coding: utf-8
 import tensorflow as tf
 import random
 import matplotlib.pyplot as plt
