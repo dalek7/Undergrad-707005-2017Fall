@@ -81,7 +81,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
-training_epochs = 20000 # 20000번 정도
+training_epochs = 10000 # 20000번 정도
 batch_size = 50 # 50 개씩
 
 for i in range(training_epochs):
