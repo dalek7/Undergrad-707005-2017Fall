@@ -80,10 +80,7 @@ plt.imshow(mnist.test.images[r:r + 1].reshape(28, 28), cmap='Greys')#, interpola
 
 # 내가 그린 숫자를 읽어오는 부분
 # Custom images
-
-
-
-x = img.imread("../data/4_28x.png")
+x = img.imread("customdata/4_28x.png")
 x = x.astype(float)
 x1 = np.array(x)
 x1 = x1/255.0
